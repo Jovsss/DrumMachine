@@ -21,7 +21,7 @@ echo "<br>";                                    /* next pharagraph */
 /*or*/
 echo "Hello World";
 echo "<br>";
-echo strtolower($varname);                         /*pull up variable nad to lower case*/
+echo strtolower($varname);      s                   /*pull up variable nad to lower case*/
 echo "<br>";
 echo strtoupper($varname);                      /*pull up variable nad to upper case*/
 echo "<br>";
