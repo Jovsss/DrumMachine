@@ -21,8 +21,8 @@ echo "<br>";                                    /* next pharagraph */
 /*or*/
 echo "Hello World";
 echo "<br>";
-echo strtolower($varname);      s                   /*pull up variable nad to lower case*/
-echo "<br>";
+echo strtolower($varname);                         /*pull up variable nad to lower case*/
+echo  "<br>";
 echo strtoupper($varname);                      /*pull up variable nad to upper case*/
 echo "<br>";
 echo strlen($varname);                             /*pull up variable and how long index is*/
@@ -46,9 +46,100 @@ echo substr($varname2,9,2);                     /*grab a sub string with length*
 
 /*                                                                                                                                                                                      
 
-Numbers
+Numbers*/
+
+echo "<br>";
+echo 19;
+echo "<br>";
+echo -19;
+echo "<br>";
+echo 19.19;
+echo "<br>";
+echo 5 + 9;
+echo "<br>";
+echo 10%3;                                             /* 10 divided by 3 == remainder of 1 */
+echo "<br>";
+$num = 19 ;
+echo $num;
+echo "<br>";
+$num++;
+echo "<br>";
+echo $num;
+echo "<br>";
+$num = $num + 25;
+echo "<br>";
+echo $num;
+echo "<br>";
+$num += 25;
+echo $num;
+echo "<br>";
+echo abs(-19);                          /*Absolute Value*/
+echo "<br>";
+echo pow(2,4);                             /*raise to a power*/
+echo "<br>";
+echo sqrt(144);                         /*square root*/
+echo "<br>";
+echo max(100, 40);
+echo "<br>";
+echo min(100,40); 
+echo "<br>";
+echo round(3.12378123);                     /* round to the nearest*/
+echo "<br>";
+echo ceil(3.12378123);                      /*round to highest*/
+echo "<br>";
+echo floor(3.12378123);                     /*round to lowest*/
+
+
+
+/*get user input*/
+
+
 
 ?>
+
+<form action="home.php" method="get">
+    Username 
+    <br>
+    <input type="text" name="Username">
+    <br>
+    
+    <br>
+    Age: 
+    <br>
+    <input type="number" name="age">
+    <input type="submit">
+</form>
+<br>
+Your Name is
+<?php
+
+/*get user input*/
+echo $_GET["Username"];
+?><br>
+Your Age is
+<?php
+echo $_GET["age"];
+?>
+
+<form action="site" method="get">
+    <input type="number" name="num1">
+    <br>
+    <input type="number" name="num2">
+    <br>
+    <input type="submit">
+
+</form>
+
+<?php
+    echo $_GET["num1"] + $_GET["num2"];
+
+?>
+
+
+
+
+
+
 </body>
 
 </html>
